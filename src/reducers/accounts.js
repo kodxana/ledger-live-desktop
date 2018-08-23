@@ -2,9 +2,9 @@
 
 import { createSelector } from 'reselect'
 import { handleActions } from 'redux-actions'
-import { createAccountModel } from '@ledgerhq/live-common/lib/models/account'
+import { createAccountModel } from 'lbry-changes/lib/models/account'
 import logger from 'logger'
-import type { Account, AccountRaw } from '@ledgerhq/live-common/lib/types'
+import type { Account, AccountRaw } from 'lbry-changes/lib/types'
 import { OUTDATED_CONSIDERED_DELAY, DEBUG_SYNC } from 'config/constants'
 
 export type AccountsState = Account[]
